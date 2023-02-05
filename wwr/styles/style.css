@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Work+Sans:wght@500&display=swap');
+
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #44AF69;
     --secondary-color: #FC7A1E;
     --accent1-color: #188FA7;
     --accent2-color: #F5FBEF;
+
+    --heading-font: 'Work Sans', sans-serif;
+    --paragraph-font: Lato, 'Heebo', sans-serif;
 }  
+
 
 #content{
 max-width: 1600px;
 margin: 0 auto;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+  }
+
+h2{
+margin: 0;
+}
+
 #background{
     height:725px;
     background-color: var(--accent1-color);
@@ -19,9 +35,12 @@ nav a{
     text-align: center;
     color: var(--accent1-color);
     text-decoration: none;
+    font-family: var(--paragraph-font);
+    padding: 35px;
 }
 nav a:hover{
     color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -29,44 +48,67 @@ nav a:hover{
 }
 .button-box{
     text-align: center;
+    font-family: var(--paragraph-font);
 }
 main section{
     text-align: center;
+    font-family: var(--paragraph-font);
 }
 body{
     background-color: var(--accent2-color);
+    font-family: var(--paragraph-font);
 }
 header{
     background-color: var(--primary-color);
-}
-nav a:hover{
-    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 .book, .join{
     background-color: var(--primary-color);
     color: var(--accent1-color);
     text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: var(--primary-color);
     color: var(--accent1-color);
 }
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
+}
 
 .msg{
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    padding: 35px;
 }
 .msg h2{
     color: var(--accent2-color);
 }
 .msg p{
     color: var(--accent2-color);
+    font-size: 0.8em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
 }
 
 footer{
     background-color: var(--primary-color);
     font-size: 1.2em;
+    font-family: var(--paragraph-font);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     color: var(--accent1-color);
@@ -76,16 +118,31 @@ footer p a:hover{
     color: var(--accent1-color);
     text-decoration: underline;
 }
+footer .social img{
+padding-top: 15px;
+}
+
 .home-title{
     color: var(--accent1-color);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     color: var(--accent1-color);
+    font-family: var(--paragraph-font);
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo{
     width: 80px;
 }
+#logo_link{
+    padding-top: 5px;
+}
+.rivers-card, .camping-card, .rapids-card  {
+    margin: 200px 0;
+} 
