@@ -186,7 +186,7 @@
   height: 400px; 
   background-color: gold; 
   grid-row: 3/7;
-  grid-column: 5/7;
+  grid-column: 4/7;
   z-index: 1;
 
 } 
