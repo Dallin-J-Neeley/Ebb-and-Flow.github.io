@@ -30,7 +30,7 @@ margin: 0;
 
 nav a{
     text-align: center;
-    color: var(--accent1-color);
+    color: var(--accent2-color);
     text-decoration: none;
     font-family: var(--paragraph-font);
     padding: 35px;
@@ -40,12 +40,30 @@ nav a:hover{
     background-color: var(--primary-color);
 }
 
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
 #hero-msg h1, #hero-msg h4{
     text-align: center;
+    
 }
 .button-box{
     text-align: center;
     font-family: var(--paragraph-font);
+    color: white;
 }
 main section{
     text-align: center;
@@ -61,6 +79,13 @@ header{
     font-size: 22px;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-around;
 }
 
 .book, .join{
@@ -139,13 +164,18 @@ h4{
 }
 #logo_link{
     padding-top: 5px;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
+
 
 .home-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:30px;
     border: 1px solid black;
+    /*align-items/self and justify, stretch, start, end, end*/
 }
 .rivers-card, .camping-card, .rapids-card  {
     margin: 30px; 
@@ -157,7 +187,6 @@ h4{
     width: 200px;
     margin: 30px;  
     border: 1px solid black;
-
 }
 
 #background{
@@ -171,7 +200,6 @@ h4{
     background-color: var(--accent1-color);
 
     border: 1px solid black;
-
 }
 
 .mountains{
@@ -182,7 +210,6 @@ h4{
 }
 
 .msg{
-
     background-color: var(--primary-color);
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
