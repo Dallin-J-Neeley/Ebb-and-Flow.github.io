@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
 img {
   display: block;
@@ -181,4 +181,32 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+
+
+#content{
+  max-width: 1600px;
+  margin: 0 auto;
+  }
+
+footer{
+  background-color: var(--primary-color);
+  font-size: 1.2em;
+  font-family: var(--paragraph-font);
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+footer a{
+  color: var(--accent1-color);
+  text-decoration: none;
+}
+footer p a:hover{
+  color: var(--accent1-color);
+  text-decoration: underline;
+}
+
+footer .social img{
+padding-top: 15px;
+padding-left: 10px;
 }
